@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -13,6 +14,7 @@ import MallListing from "./pages/MallListing";
 import BookSlot from "./pages/BookSlot";
 import BookingConfirmation from "./pages/BookingConfirmation";
 import BookingHistory from "./pages/BookingHistory";
+import ScanQR from "./pages/ScanQR";
 import NotFound from "./pages/NotFound";
 import { initAuth } from "./utils/auth";
 
@@ -40,6 +42,7 @@ const App = () => {
             <Route path="/book/:mallId" element={<BookSlot />} />
             <Route path="/booking/:bookingId" element={<BookingConfirmation />} />
             <Route path="/booking-history" element={<BookingHistory />} />
+            <Route path="/scan-qr" element={<ScanQR />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
